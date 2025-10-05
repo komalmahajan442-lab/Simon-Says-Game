@@ -57,6 +57,10 @@ button{
 
   button{
     display: block;
-    text-align: center;
+   margin: auto;
+   background-color: #63aac0;
+color: white;
+padding: 0.5rem;
+border-radius:  15px ;
   }
 }
