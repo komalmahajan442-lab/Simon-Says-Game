@@ -59,7 +59,7 @@ if(gameSeq[idx]===userSeq[idx]){
    setTimeout(levelup,1000);
    }
 }else{
-    h2.innerHTML=`Game Over! Your score was <b>${level}</b> <br> Press any key to start again`;
+    h2.innerHTML=`Game Over! Your score was <b>${level}</b> <br> Press any key to start again `;
     document.querySelector('body').style.backgroundColor='red';
     setTimeout(()=>{
         document.querySelector('body').style.backgroundColor='white';
@@ -96,4 +96,5 @@ function reset(){
     gameSeq=[];
     userSeq=[];
     level=0;
+    startbtn.style.display="inline-block";
 }
