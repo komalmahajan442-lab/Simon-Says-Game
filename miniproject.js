@@ -1,5 +1,5 @@
 let h3=document.querySelector('h3');
-
+let startbtn=document.querySelector("button");
 let gameSeq=[];
 let userSeq=[];
 
@@ -9,15 +9,18 @@ let started=false;
 let level=0;
 highestScore=level;
 
-document.addEventListener('keypress',()=>{
+let startgame=()=>{
     if(started==false){
         console.log('game started');
         started=true;
+
     }
     levelup();
-});
+    startbtn.style.display="none";
+};
 
-
+document.addEventListener('keypress',startgame);
+startbtn.addEventListener('click',startgame);
 
 let h2=document.querySelector('h2');
 

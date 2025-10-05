@@ -33,7 +33,10 @@ body{
     background-color: green;
 }
 
+button{
+    display: none;
 
+}
     @media (max-width: 480px) {
   
 
@@ -50,5 +53,10 @@ body{
 
   h2 {
     font-size: 1rem;
+  }
+
+  button{
+    display: block;
+    text-align: center;
   }
 }
